@@ -141,7 +141,7 @@
   .card p { margin: 0 0 12px; color: var(--muted); font-size: .95rem; flex: 1; }
   .card a.link { font-weight: 600; font-size: .94rem; }
 
-  .about-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 28px; align-items: start; }
+  .about-grid { display: block; max-width: 760px; }
   @media (max-width: 800px) { .about-grid { grid-template-columns: 1fr; } }
   .about-grid p { margin: 0 0 14px; }
   .facts { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
@@ -211,7 +211,6 @@
     <nav class="links" id="links" aria-label="Primary">
       <a href="#about">About</a>
       <a href="#focus">Focus</a>
-      <a href="#principles">Principles</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
@@ -265,15 +264,6 @@
           review everything it produces like any other pull request.
         </p>
       </div>
-      <aside class="facts">
-        <dl>
-          <dt>Role</dt><dd>Android Engineer</dd>
-          <dt>Company</dt><dd>Ericsson Enterprise Wireless Solutions</dd>
-          <dt>Works from</dt><dd>India (Bengaluru team, remote)</dd>
-          <dt>Languages</dt><dd>English, Telugu</dd>
-          <dt>Education</dt><dd>B.Tech, ECE (2014)</dd>
-        </dl>
-      </aside>
     </div>
   </section>
 
@@ -292,16 +282,6 @@
   </section>
 
 
-  <section id="principles" class="reveal">
-    <div class="eyebrow">How I work</div>
-    <h2>Principles</h2>
-    <div class="grid cols-4">
-      <div class="card"><h3>Wrap before you rewrite</h3><p>When the deadline is short, add a layer around what works. Rewrites can plug into it later.</p></div>
-      <div class="card"><h3>Measure, then argue</h3><p>A small demo with numbers settles a debate faster than opinions.</p></div>
-      <div class="card"><h3>Design APIs that can grow</h3><p>Pick structures that accept new fields without breaking old callers.</p></div>
-      <div class="card"><h3>Explain the why</h3><p>A review comment with a reason teaches. One without a reason only corrects.</p></div>
-    </div>
-  </section>
 
   <section id="skills" class="reveal">
     <div class="eyebrow">Toolbox</div>
@@ -324,7 +304,7 @@
     <p class="sub"></p>
 
     <div class="job">
-      <h3>Android Engineer, Ericsson Enterprise Wireless Solutions</h3>
+      <h3>Senior Android Engineer, Ericsson Enterprise Wireless Solutions</h3>
       <div class="meta">Apr 2022 – Present · Bengaluru (Remote)</div>
       <ul>
         <li>Build new features with cross-functional teams.</li>
@@ -337,7 +317,7 @@
     </div>
 
     <div class="job">
-      <h3>Software Engineer 2 (Android), Rakuten India Enterprise</h3>
+      <h3>Senior Android Engineer, Rakuten India Enterprise</h3>
       <div class="meta">Nov 2020 – Apr 2022 · Bengaluru</div>
       <ul>
         <li>Worked with backend developers, program managers and QA on new product ideas.</li>
