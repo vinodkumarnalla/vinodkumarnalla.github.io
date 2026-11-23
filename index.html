@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vinod Kumar Nalla | Senior Android Engineer</title>
+<meta name="description" content="Vinod Kumar Nalla is an Android engineer with 11+ years of experience in Kotlin, Jetpack Compose and clean architecture.">
+<meta property="og:title" content="Vinod Kumar Nalla | Senior Android Engineer">
+<meta property="og:description" content="11+ years building production Android apps: Kotlin, Jetpack Compose, MVVM, Clean Architecture.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%233ddc84'/><text x='50' y='68' font-size='56' text-anchor='middle' font-family='sans-serif' font-weight='700' fill='%23073042'>VN</text></svg>">
+<style>
+  :root {
+    --bg: #0b1220;
+    --surface: #131c2f;
+    --border: #22304b;
+    --text: #e6ecf5;
+    --muted: #93a1b8;
+    --accent: #3ddc84;
+    --accent-ink: #052b17;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f6f8fb;
+      --surface: #ffffff;
+      --border: #dbe2ee;
+      --text: #0f1a2e;
+      --muted: #55627a;
+      --accent: #0f9d58;
+      --accent-ink: #ffffff;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+
+  header.nav {
+    position: sticky; top: 0; z-index: 10;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+  }
+  header.nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 56px; }
+  header.nav strong { letter-spacing: .3px; }
+  header.nav nav a { margin-left: 18px; color: var(--muted); font-size: .95rem; }
+  header.nav nav a:hover { color: var(--text); text-decoration: none; }
+
+  .hero { padding: 72px 0 48px; }
+  .hero .tag { color: var(--accent); font-weight: 600; font-size: .95rem; }
+  .hero h1 { font-size: clamp(2rem, 6vw, 3.2rem); margin: 8px 0 12px; line-height: 1.15; }
+  .hero p.lead { color: var(--muted); font-size: 1.1rem; max-width: 640px; }
+  .btns { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn {
+    display: inline-block; padding: 10px 18px; border-radius: 10px;
+    font-weight: 600; border: 1px solid var(--border); color: var(--text);
+  }
+  .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .btn:hover { text-decoration: none; filter: brightness(1.08); }
+
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-top: 36px; }
+  .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+  .stat b { display: block; font-size: 1.5rem; color: var(--accent); }
+  .stat span { color: var(--muted); font-size: .9rem; }
+
+  section { padding: 44px 0; border-top: 1px solid var(--border); }
+  section h2 { margin: 0 0 20px; font-size: 1.5rem; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { background: var(--surface); border: 1px solid var(--border); padding: 4px 12px; border-radius: 999px; font-size: .9rem; }
+  .skill-group { margin-bottom: 18px; }
+  .skill-group h3 { margin: 0 0 8px; font-size: .95rem; color: var(--muted); font-weight: 600; }
+
+  .job { position: relative; padding-left: 22px; margin-bottom: 28px; border-left: 2px solid var(--border); }
+  .job::before {
+    content: ""; position: absolute; left: -7px; top: 6px; width: 12px; height: 12px;
+    background: var(--accent); border-radius: 50%;
+  }
+  .job h3 { margin: 0; font-size: 1.1rem; }
+  .job .meta { color: var(--muted); font-size: .9rem; margin: 2px 0 8px; }
+  .job ul { margin: 0; padding-left: 18px; }
+  .job li { margin-bottom: 4px; }
+
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 16px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 18px; display: flex; flex-direction: column; }
+  .card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+  .card p { margin: 0 0 12px; color: var(--muted); font-size: .95rem; flex: 1; }
+  .card a.link { font-weight: 600; font-size: .95rem; }
+
+  footer { border-top: 1px solid var(--border); padding: 28px 0 40px; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <strong>Vinod Kumar Nalla</strong>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Apps</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <div class="tag">Android Engineer · SDE 3</div>
+    <h1>I build production Android apps that people use every day.</h1>
+    <p class="lead">
+      11+ years of native Android with Kotlin and Jetpack Compose. Currently SDE 3 at Ericsson
+      Enterprise Wireless Solutions, working on the Cradlepoint NetCloud Manager and Verify apps.
+    </p>
+    <div class="btns">
+      <a class="btn primary" href="#projects">See my apps</a>
+      <a class="btn" href="mailto:vinodkumar.nalla67@gmail.com">Email me</a>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>11+</b><span>years in Android</span></div>
+      <div class="stat"><b>5</b><span>apps listed on Google Play</span></div>
+      <div class="stat"><b>6+</b><span>junior developers mentored</span></div>
+      <div class="stat"><b>4</b><span>companies</span></div>
+    </div>
+  </div>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      I design and build mobile applications with a focus on user experience, performance and code quality.
+      I moved a legacy Java library to Kotlin, worked to reduce ANRs and crashes, raised automated test
+      coverage on critical apps, and guide a team of six or more junior developers through code reviews and
+      architecture decisions.
+    </p>
+    <p>
+      I work closely with backend engineers, QA, designers and program managers, and I like turning
+      product requirements into simple, maintainable code. I also use AI-assisted development
+      (Claude) for code generation, refactoring and writing tests.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-group"><h3>Languages</h3>
+      <div class="chips"><span class="chip">Kotlin</span><span class="chip">Java</span><span class="chip">Kotlin Multiplatform</span></div></div>
+    <div class="skill-group"><h3>Android</h3>
+      <div class="chips"><span class="chip">Android SDK</span><span class="chip">Jetpack Compose</span><span class="chip">Jetpack Components</span><span class="chip">Room</span><span class="chip">Coroutines</span><span class="chip">Flow</span><span class="chip">LiveData</span><span class="chip">Retrofit</span><span class="chip">Ktor</span><span class="chip">Firebase</span></div></div>
+    <div class="skill-group"><h3>Architecture and DI</h3>
+      <div class="chips"><span class="chip">MVVM</span><span class="chip">MVI</span><span class="chip">MVP</span><span class="chip">Clean Architecture</span><span class="chip">Dagger-Hilt</span><span class="chip">Koin</span></div></div>
+    <div class="skill-group"><h3>Quality and delivery</h3>
+      <div class="chips"><span class="chip">JUnit</span><span class="chip">Mockito</span><span class="chip">JaCoCo</span><span class="chip">Git</span><span class="chip">GitHub Actions</span><span class="chip">CI/CD</span><span class="chip">Performance optimization</span></div></div>
+    <div class="skill-group"><h3>Ways of working</h3>
+      <div class="chips"><span class="chip">Mentoring</span><span class="chip">Agile / Scrum</span><span class="chip">Technical documentation</span><span class="chip">Cross-functional collaboration</span></div></div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="job">
+      <h3>SDE 3, Ericsson Enterprise Wireless Solutions</h3>
+      <div class="meta">Apr 2022 – Present · Bengaluru (Remote)</div>
+      <ul>
+        <li>Build new features for the Cradlepoint NetCloud Manager and Verify apps with cross-functional teams.</li>
+        <li>Reduce Application Not Responding (ANR) incidents and crashes to improve app stability.</li>
+        <li>Increase test coverage for both apps to raise code quality and cut production issues.</li>
+        <li>Converted an entire Java library to Kotlin for better maintainability and performance.</li>
+        <li>Worked with the UX/UI team on an app redesign, then measured it with user feedback surveys.</li>
+        <li>Optimized code and load times; mentor junior engineers through knowledge transfer and guidance.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Software Engineer 2 (Android), Rakuten India Enterprise</h3>
+      <div class="meta">Nov 2020 – Apr 2022 · Bengaluru</div>
+      <ul>
+        <li>Worked with backend developers, program managers and QA on new product ideas.</li>
+        <li>Turned product requirements into clean, efficient code that met quality benchmarks.</li>
+        <li>Built the Rakuten Point Card app.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Senior Software Engineer (Android), Chefling Software</h3>
+      <div class="meta">Mar 2018 – Nov 2020 · Bengaluru</div>
+      <ul>
+        <li>Evaluated project requirements and designed the Chefling Android app from the start using MVP with Clean Architecture.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Software Engineer (Android), Teleparadigm Networks</h3>
+      <div class="meta">Feb 2015 – Feb 2018 · Hyderabad</div>
+      <ul>
+        <li>Worked with Android and backend teams and built a base in Android practices and coding standards.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Apps on Google Play</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Cradlepoint NetCloud Manager</h3>
+        <p>Manage NetCloud services, routers and endpoints remotely. Get alerts, monitor router status and LTE signal strength, run tests and reboot devices from anywhere.</p>
+        <a class="link" href="https://play.google.com/store/apps/details?id=com.cradlepoint.netcloud.manager" target="_blank" rel="noopener">View on Google Play →</a>
+      </div>
+      <div class="card">
+        <h3>Cradlepoint Verify</h3>
+        <p>An installation tool that guides installers in assembling and positioning Cradlepoint endpoints to build a reliable Wireless WAN network.</p>
+        <a class="link" href="https://play.google.com/store/apps/details?id=com.cradlepoint.verify" target="_blank" rel="noopener">View on Google Play →</a>
+      </div>
+      <div class="card">
+        <h3>Rakuten Point Card</h3>
+        <p>Pay shopping bills with Rakuten points by showing a barcode. Includes a store locator, point history, and current campaigns and coupons.</p>
+        <a class="link" href="https://play.google.com/store/apps/details?id=jp.co.rakuten.pointpartner.app" target="_blank" rel="noopener">View on Google Play →</a>
+      </div>
+      <div class="card">
+        <h3>Chefling</h3>
+        <p>A smart kitchen assistant that suggests recipes from the ingredients in your pantry, controls connected Bosch and Thermador appliances, and helps plan meals.</p>
+        <a class="link" href="https://play.google.com/store/apps/details?id=com.chefling.chefling" target="_blank" rel="noopener">View on Google Play →</a>
+      </div>
+      <div class="card">
+        <h3>HomePad Pro</h3>
+        <p>A property management app for digital inspections of rental properties: documents, inventory, renovation tracking and building analysis reports on iPads and tablets.</p>
+        <a class="link" href="https://play.google.com/store/apps/details?id=com.app.android.homepad.pro" target="_blank" rel="noopener">View on Google Play →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>B.Tech, Electronics and Communication Engineering</strong><br>
+    Sri Sivani Institute of Technology, Srikakulam · 2014</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Open to senior and staff Android roles. The best way to reach me is email.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:vinodkumar.nalla67@gmail.com">vinodkumar.nalla67@gmail.com</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© <span id="y"></span> Vinod Kumar Nalla</div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
