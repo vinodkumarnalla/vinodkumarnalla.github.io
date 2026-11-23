@@ -174,6 +174,7 @@
   }
   .job h3 { margin: 0; font-size: 1.12rem; }
   .job .meta { color: var(--muted); font-size: .9rem; margin: 2px 0 10px; }
+  .scope { display: inline-block; margin: 0 0 10px; padding: 3px 12px; font-size: .82rem; font-weight: 600; color: var(--accent); border: 1px solid color-mix(in srgb, var(--accent) 40%, var(--border)); background: color-mix(in srgb, var(--accent) 10%, transparent); border-radius: 999px; }
   .job ul { margin: 0; padding-left: 18px; }
   .job li { margin-bottom: 5px; }
 
@@ -210,9 +211,10 @@
     <a class="brand" href="#top">Vinod<span>.</span>dev</a>
     <nav class="links" id="links" aria-label="Primary">
       <a href="#about">About</a>
+      <a href="#career">Career</a>
+      <a href="#lead">Leadership</a>
       <a href="#focus">Focus</a>
       <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
     </nav>
     <div style="display:flex;gap:8px">
@@ -238,6 +240,13 @@
     </div>
 
   </div>
+
+
+
+
+
+
+
 
   <section id="about" class="reveal">
     <div class="eyebrow">About me</div>
@@ -267,8 +276,64 @@
     </div>
   </section>
 
+  <section id="career" class="reveal">
+    <div class="eyebrow">01 — Career arc</div>
+    <h2>From learning the craft to owning quality</h2>
+    <p class="sub">How my scope grew over four companies.</p>
+
+    <div class="job">
+      <h3>Senior Android Engineer, Ericsson Enterprise Wireless Solutions</h3>
+      <div class="meta">Apr 2022 – Present · Bengaluru (Remote)</div>
+      <span class="scope">Scope: Quality, stability and team guidance</span>
+      <ul>
+        <li>Build new features with cross-functional teams.</li>
+        <li>Reduce Application Not Responding (ANR) incidents and crashes to improve app stability.</li>
+        <li>Increase test coverage on critical apps to raise code quality and cut production issues.</li>
+        <li>Converted an entire Java library to Kotlin for better maintainability and performance.</li>
+        <li>Worked with the UX/UI team on an app redesign, then checked it with user feedback surveys.</li>
+        <li>Optimized code and load times; mentor junior engineers through knowledge transfer and guidance.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>Senior Android Engineer, Rakuten India Enterprise</h3>
+      <div class="meta">Nov 2020 – Apr 2022 · Bengaluru</div>
+      <span class="scope">Scope: Product features with cross-functional teams</span>
+      <ul>
+        <li>Worked with backend developers, program managers and QA on new product ideas.</li>
+        <li>Turned product requirements into clean, efficient code that met quality benchmarks.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>Senior Software Engineer (Android), Chefling Software</h3>
+      <div class="meta">Mar 2018 – Nov 2020 · Bengaluru</div>
+      <span class="scope">Scope: Architecture from the ground up</span>
+      <ul>
+        <li>Evaluated project requirements and designed the Android app architecture from the start using MVP with Clean Architecture.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>Software Engineer (Android), Teleparadigm Networks</h3>
+      <div class="meta">Feb 2015 – Feb 2018 · Hyderabad</div>
+      <span class="scope">Scope: Foundations and coding standards</span>
+      <ul>
+        <li>Worked with Android and backend teams and built a base in Android practices and coding standards.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="lead" class="reveal">
+    <div class="eyebrow">02 — How I lead</div>
+    <h2>Beyond the code</h2>
+    <div class="grid cols-4">
+      <div class="card"><div class="ico">📊</div><h3>Decide with evidence</h3><p>I back a technical choice with a small demo and real numbers before asking a team to commit.</p></div>
+      <div class="card"><div class="ico">🌱</div><h3>Grow the team</h3><p>Code reviews, architecture guidance and knowledge transfer for six or more junior developers, with the reason behind each comment.</p></div>
+      <div class="card"><div class="ico">🌉</div><h3>Bridge business and engineering</h3><p>I work with product, QA, backend and UX to turn requirements into simple, maintainable code.</p></div>
+      <div class="card"><div class="ico">🛡️</div><h3>Own production</h3><p>Fewer ANRs and crashes, higher test coverage and stable releases.</p></div>
+    </div>
+  </section>
+
   <section id="focus" class="reveal">
-    <div class="eyebrow">What I do best</div>
+    <div class="eyebrow">03 — What I do best</div>
     <h2>Focus areas</h2>
     <p class="sub">The kinds of problems I'm usually brought in to solve.</p>
     <div class="grid cols-3">
@@ -281,10 +346,8 @@
     </div>
   </section>
 
-
-
   <section id="skills" class="reveal">
-    <div class="eyebrow">Toolbox</div>
+    <div class="eyebrow">04 — Toolbox</div>
     <h2>Skills</h2>
     <div class="skill-group"><h3>Languages</h3>
       <div class="chips"><span class="chip">Kotlin</span><span class="chip">Java</span><span class="chip">Kotlin Multiplatform</span></div></div>
@@ -298,56 +361,11 @@
       <div class="chips"><span class="chip">Mentoring</span><span class="chip">Agile / Scrum</span><span class="chip">Technical documentation</span><span class="chip">Cross-functional collaboration</span><span class="chip">AI-assisted development</span></div></div>
   </section>
 
-  <section id="experience" class="reveal">
-    <div class="eyebrow">Career</div>
-    <h2>Experience</h2>
-    <p class="sub"></p>
-
-    <div class="job">
-      <h3>Senior Android Engineer, Ericsson Enterprise Wireless Solutions</h3>
-      <div class="meta">Apr 2022 – Present · Bengaluru (Remote)</div>
-      <ul>
-        <li>Build new features with cross-functional teams.</li>
-        <li>Reduce Application Not Responding (ANR) incidents and crashes to improve app stability.</li>
-        <li>Increase test coverage on critical apps to raise code quality and cut production issues.</li>
-        <li>Converted an entire Java library to Kotlin for better maintainability and performance.</li>
-        <li>Worked with the UX/UI team on an app redesign, then checked it with user feedback surveys.</li>
-        <li>Optimized code and load times; mentor junior engineers through knowledge transfer and guidance.</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <h3>Senior Android Engineer, Rakuten India Enterprise</h3>
-      <div class="meta">Nov 2020 – Apr 2022 · Bengaluru</div>
-      <ul>
-        <li>Worked with backend developers, program managers and QA on new product ideas.</li>
-        <li>Turned product requirements into clean, efficient code that met quality benchmarks.</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <h3>Senior Software Engineer (Android), Chefling Software</h3>
-      <div class="meta">Mar 2018 – Nov 2020 · Bengaluru</div>
-      <ul>
-        <li>Evaluated project requirements and designed the Android app architecture from the start using MVP with Clean Architecture.</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <h3>Software Engineer (Android), Teleparadigm Networks</h3>
-      <div class="meta">Feb 2015 – Feb 2018 · Hyderabad</div>
-      <ul>
-        <li>Worked with Android and backend teams and built a base in Android practices and coding standards.</li>
-      </ul>
-    </div>
-  </section>
-
-
   <section id="contact" class="reveal">
     <div class="contact-box">
       <div class="eyebrow">Contact</div>
       <h2>Let's talk</h2>
-      <p class="sub" style="margin-bottom:0">I'm open to senior and staff Android roles. A call or an email both work.</p>
+      <p class="sub" style="margin-bottom:0">Happy to talk senior and staff Android roles. A call or an email both work.</p>
       <div class="contact-list">
         <a class="contact-item" href="tel:+919110734491"><small>Phone</small><strong>+91 9110734491</strong></a>
         <a class="contact-item" href="https://wa.me/919110734491" target="_blank" rel="noopener"><small>WhatsApp</small><strong>Message me</strong></a>
