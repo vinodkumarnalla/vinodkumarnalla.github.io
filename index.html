@@ -179,6 +179,24 @@
   }
   .job h3 { margin: 0; font-size: 1.12rem; }
   .job .meta { color: var(--muted); font-size: .9rem; margin: 2px 0 10px; }
+  /* career ruler */
+  .ruler { margin: 4px 0 28px; }
+  .ticks { position: relative; height: 22px; color: var(--muted); font-size: .72rem; }
+  .ticks span { position: absolute; transform: translateX(-1px); padding-left: 4px; border-left: 1px solid var(--border); height: 22px; }
+  .track { position: relative; height: 46px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  .bar { position: absolute; top: 5px; bottom: 5px; border-radius: 8px; display: flex; align-items: center; padding: 0 10px; font-size: .8rem; font-weight: 700; color: var(--accent-ink); white-space: nowrap; overflow: hidden; }
+  .bar span { overflow: hidden; text-overflow: ellipsis; }
+  .bar.b0 { background: color-mix(in srgb, var(--accent-2) 80%, var(--accent)); }
+  .bar.b1 { background: color-mix(in srgb, var(--accent-2) 55%, var(--accent)); }
+  .bar.b2 { background: color-mix(in srgb, var(--accent) 80%, var(--accent-2)); }
+  .bar.b3 { background: var(--accent); }
+  .arc-card .yrs { font-size: 1.7rem; font-weight: 800; letter-spacing: -.5px; line-height: 1.2; }
+  .arc-card h3 { margin: 6px 0 2px; }
+  .arc-card .co { color: var(--muted); margin-bottom: 12px; }
+  .arc-card .scope { align-self: flex-start; margin: 0; border-radius: 10px; line-height: 1.4; padding: 5px 12px; }
+  .grid.arc { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 700px) { .grid.arc { grid-template-columns: 1fr; } }
+  @media (max-width: 600px) { .ticks span:nth-child(even) { display: none; } .bar { padding: 0 4px; font-size: .68rem; } }
   .scope { display: inline-block; margin: 0 0 10px; padding: 3px 12px; font-size: .82rem; font-weight: 600; color: var(--accent); border: 1px solid color-mix(in srgb, var(--accent) 40%, var(--border)); background: color-mix(in srgb, var(--accent) 10%, transparent); border-radius: 999px; }
   .job ul { margin: 0; padding-left: 18px; }
   .job li { margin-bottom: 5px; }
@@ -268,43 +286,36 @@
     <h2>From learning the craft to owning quality</h2>
     <p class="sub">How my scope grew over four companies.</p>
 
-    <div class="job">
-      <h3>Mobile Lead, Ericsson Enterprise Wireless Solutions</h3>
-      <div class="meta">Apr 2022 – Present · Bengaluru (Remote)</div>
-      <span class="scope">Scope: Quality, stability and team guidance</span>
-      <ul>
-        <li>Build new features with cross-functional teams.</li>
-        <li>Reduce Application Not Responding (ANR) incidents and crashes to improve app stability.</li>
-        <li>Increase test coverage on critical apps to raise code quality and cut production issues.</li>
-        <li>Converted an entire Java library to Kotlin for better maintainability and performance.</li>
-        <li>Worked with the UX/UI team on an app redesign, then checked it with user feedback surveys.</li>
-        <li>Optimized code and load times; mentor junior engineers through knowledge transfer and guidance.</li>
-      </ul>
+    <div class="ruler" aria-hidden="true">
+      <div class="ticks"><span style="left:0.0%">2015</span><span style="left:8.33%">2016</span><span style="left:16.67%">2017</span><span style="left:25.0%">2018</span><span style="left:33.33%">2019</span><span style="left:41.67%">2020</span><span style="left:50.0%">2021</span><span style="left:58.33%">2022</span><span style="left:66.67%">2023</span><span style="left:75.0%">2024</span><span style="left:83.33%">2025</span><span style="left:91.67%">2026</span></div>
+      <div class="track"><div class="bar b0" style="left:0.83%;width:25.0%" title="Teleparadigm Networks: 2015 — 2018"><span>Teleparadigm</span></div><div class="bar b1" style="left:26.67%;width:22.08%" title="Chefling Software: 2018 — 2020"><span>Chefling</span></div><div class="bar b2" style="left:48.75%;width:11.67%" title="Rakuten India Enterprise: 2020 — 2022"><span>Rakuten</span></div><div class="bar b3" style="left:60.42%;width:38.75%" title="Ericsson Enterprise Wireless Solutions: 2022 — Now"><span>Ericsson</span></div></div>
     </div>
-    <div class="job">
-      <h3>Senior Android Engineer, Rakuten India Enterprise</h3>
-      <div class="meta">Nov 2020 – Apr 2022 · Bengaluru</div>
-      <span class="scope">Scope: Product features with cross-functional teams</span>
-      <ul>
-        <li>Worked with backend developers, program managers and QA on new product ideas.</li>
-        <li>Turned product requirements into clean, efficient code that met quality benchmarks.</li>
-      </ul>
-    </div>
-    <div class="job">
-      <h3>Senior Software Engineer (Android), Chefling Software</h3>
-      <div class="meta">Mar 2018 – Nov 2020 · Bengaluru</div>
-      <span class="scope">Scope: Architecture from the ground up</span>
-      <ul>
-        <li>Evaluated project requirements and designed the Android app architecture from the start using MVP with Clean Architecture.</li>
-      </ul>
-    </div>
-    <div class="job">
-      <h3>Software Engineer (Android), Teleparadigm Networks</h3>
-      <div class="meta">Feb 2015 – Feb 2018 · Hyderabad</div>
-      <span class="scope">Scope: Foundations and coding standards</span>
-      <ul>
-        <li>Worked with Android and backend teams and built a base in Android practices and coding standards.</li>
-      </ul>
+
+    <div class="grid cols-2 arc">
+      <article class="card arc-card">
+        <div class="yrs gradient-text">2022 — Now</div>
+        <h3>Mobile Lead</h3>
+        <div class="co">Ericsson Enterprise Wireless Solutions</div>
+        <span class="scope">Scope: Quality, stability and team guidance</span>
+      </article>
+      <article class="card arc-card">
+        <div class="yrs gradient-text">2020 — 2022</div>
+        <h3>Senior Android Engineer</h3>
+        <div class="co">Rakuten India Enterprise</div>
+        <span class="scope">Scope: Product features with cross-functional teams</span>
+      </article>
+      <article class="card arc-card">
+        <div class="yrs gradient-text">2018 — 2020</div>
+        <h3>Senior Software Engineer (Android)</h3>
+        <div class="co">Chefling Software</div>
+        <span class="scope">Scope: Architecture from the ground up</span>
+      </article>
+      <article class="card arc-card">
+        <div class="yrs gradient-text">2015 — 2018</div>
+        <h3>Software Engineer (Android)</h3>
+        <div class="co">Teleparadigm Networks</div>
+        <span class="scope">Scope: Foundations and coding standards</span>
+      </article>
     </div>
   </section>
 
