@@ -115,7 +115,12 @@
   .btn.primary { background: linear-gradient(90deg, var(--accent), var(--accent-2)); color: var(--accent-ink); border: 0; }
   .btn.primary:hover { filter: brightness(1.07); }
 
-  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 14px; margin-top: 44px; }
+  .quick { display: grid; grid-template-columns: 1fr 2fr 1.3fr; gap: 14px; margin: 40px 0 0; }
+  .quick > div { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 18px; }
+  .quick dt { color: var(--muted); font-size: .78rem; text-transform: uppercase; letter-spacing: 1px; }
+  .quick dd { margin: 4px 0 0; font-weight: 600; }
+  @media (max-width: 800px) { .quick { grid-template-columns: 1fr; } }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 14px; margin-top: 14px; }
   .stat { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 20px; }
   .stat b { display: block; font-size: 2rem; line-height: 1.1; }
   .stat span { color: var(--muted); font-size: .9rem; }
@@ -210,7 +215,6 @@
   <div class="wrap">
     <a class="brand" href="#top">Vinod<span>.</span>dev</a>
     <nav class="links" id="links" aria-label="Primary">
-      <a href="#about">About</a>
       <a href="#career">Career</a>
       <a href="#lead">Leadership</a>
       <a href="#focus">Focus</a>
@@ -231,12 +235,23 @@
     <h1>I build Android apps that are <span class="gradient-text">fast, stable and built to last.</span></h1>
     <p class="lead">
       I'm Vinod, an Android engineer with 11+ years of native experience in Kotlin and Jetpack Compose.
-      I currently work at Ericsson Enterprise Wireless Solutions.
     </p>
     <div class="btns">
-      <a class="btn primary" href="#about">About me</a>
+      <a class="btn primary" href="#career">My career</a>
       <a class="btn" href="tel:+919110734491">📞 +91 9110734491</a>
       <a class="btn" href="mailto:vinodkumar.nalla67@gmail.com">✉️ Email me</a>
+    </div>
+
+    <dl class="quick">
+      <div><dt>Experience</dt><dd>11+ years</dd></div>
+      <div><dt>Domains</dt><dd>Enterprise networking · Loyalty and payments · Smart kitchen · Property tech</dd></div>
+      <div><dt>Stack</dt><dd>Kotlin · Jetpack Compose · KMP</dd></div>
+    </dl>
+
+    <div class="stats">
+      <div class="stat"><b class="gradient-text">10M+</b><span>app downloads</span></div>
+      <div class="stat"><b class="gradient-text">20+</b><span>engineers mentored</span></div>
+      <div class="stat"><b class="gradient-text">4</b><span>companies</span></div>
     </div>
 
   </div>
@@ -248,33 +263,6 @@
 
 
 
-  <section id="about" class="reveal">
-    <div class="eyebrow">About me</div>
-    <h2>Engineer first, teammate always</h2>
-    <div class="about-grid">
-      <div>
-        <p>
-          I design and build mobile applications with a focus on user experience, performance and code quality.
-          Over 11 years I've worked on consumer apps and on enterprise and field tools, including apps that talk to
-          real hardware.
-        </p>
-        <p>
-          Hardware-connected apps taught me to care about the unglamorous parts: flaky networks, slow connections,
-          ANRs, crashes and what the user sees when something fails. I like turning a vague product requirement into
-          simple, maintainable code, and I'd rather measure a decision than argue about it.
-        </p>
-        <p>
-          I enjoy mentoring. I guide a team of six or more junior developers through code reviews and architecture
-          decisions, and I try to explain the reason behind every review comment so people can spot the problem
-          themselves next time.
-        </p>
-        <p>
-          I also use AI-assisted development (Claude) for code generation, refactoring and writing tests, and I
-          review everything it produces like any other pull request.
-        </p>
-      </div>
-    </div>
-  </section>
 
   <section id="career" class="reveal">
     <div class="eyebrow">01 — Career arc</div>
@@ -282,7 +270,7 @@
     <p class="sub">How my scope grew over four companies.</p>
 
     <div class="job">
-      <h3>Senior Android Engineer, Ericsson Enterprise Wireless Solutions</h3>
+      <h3>Mobile Lead, Ericsson Enterprise Wireless Solutions</h3>
       <div class="meta">Apr 2022 – Present · Bengaluru (Remote)</div>
       <span class="scope">Scope: Quality, stability and team guidance</span>
       <ul>
@@ -326,7 +314,7 @@
     <h2>Beyond the code</h2>
     <div class="grid cols-4">
       <div class="card"><div class="ico">📊</div><h3>Decide with evidence</h3><p>I back a technical choice with a small demo and real numbers before asking a team to commit.</p></div>
-      <div class="card"><div class="ico">🌱</div><h3>Grow the team</h3><p>Code reviews, architecture guidance and knowledge transfer for six or more junior developers, with the reason behind each comment.</p></div>
+      <div class="card"><div class="ico">🌱</div><h3>Grow the team</h3><p>Code reviews, architecture guidance and knowledge transfer for the engineers I mentor, with the reason behind each comment.</p></div>
       <div class="card"><div class="ico">🌉</div><h3>Bridge business and engineering</h3><p>I work with product, QA, backend and UX to turn requirements into simple, maintainable code.</p></div>
       <div class="card"><div class="ico">🛡️</div><h3>Own production</h3><p>Fewer ANRs and crashes, higher test coverage and stable releases.</p></div>
     </div>
