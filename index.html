@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vinod Kumar Nalla | Senior Android Engineer</title>
-<meta name="description" content="Vinod Kumar Nalla is an Android engineer with 11+ years of experience in Kotlin, Jetpack Compose and clean architecture. SDE 3 at Ericsson Enterprise Wireless Solutions.">
+<meta name="description" content="Vinod Kumar Nalla is an Android engineer with 11+ years of experience in Kotlin, Jetpack Compose and clean architecture.">
 <meta property="og:title" content="Vinod Kumar Nalla | Senior Android Engineer">
 <meta property="og:description" content="11+ years building production Android apps: Kotlin, Jetpack Compose, MVVM, Clean Architecture.">
 <meta property="og:type" content="website">
@@ -211,10 +211,9 @@
     <nav class="links" id="links" aria-label="Primary">
       <a href="#about">About</a>
       <a href="#focus">Focus</a>
-      <a href="#work">Case studies</a>
+      <a href="#principles">Principles</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
-      <a href="#apps">Apps</a>
       <a href="#contact">Contact</a>
     </nav>
     <div style="display:flex;gap:8px">
@@ -231,21 +230,14 @@
     <h1>I build Android apps that are <span class="gradient-text">fast, stable and built to last.</span></h1>
     <p class="lead">
       I'm Vinod, an Android engineer with 11+ years of native experience in Kotlin and Jetpack Compose.
-      I'm an SDE 3 at Ericsson Enterprise Wireless Solutions, working on the Cradlepoint NetCloud Manager
-      and Verify apps.
+      I currently work at Ericsson Enterprise Wireless Solutions.
     </p>
     <div class="btns">
-      <a class="btn primary" href="#work">See my work</a>
+      <a class="btn primary" href="#about">About me</a>
       <a class="btn" href="tel:+919110734491">📞 +91 9110734491</a>
       <a class="btn" href="mailto:vinodkumar.nalla67@gmail.com">✉️ Email me</a>
     </div>
 
-    <div class="stats">
-      <div class="stat"><b class="gradient-text">11+</b><span>years in Android</span></div>
-      <div class="stat"><b class="gradient-text">5</b><span>apps listed on Google Play</span></div>
-      <div class="stat"><b class="gradient-text">6+</b><span>junior developers mentored</span></div>
-      <div class="stat"><b class="gradient-text">4</b><span>companies</span></div>
-    </div>
   </div>
 
   <section id="about" class="reveal">
@@ -255,8 +247,8 @@
       <div>
         <p>
           I design and build mobile applications with a focus on user experience, performance and code quality.
-          Over 11 years I've worked on consumer apps (rewards and payments, smart kitchen) and on enterprise and
-          field tools that talk to real hardware such as routers and endpoints.
+          Over 11 years I've worked on consumer apps and on enterprise and field tools, including apps that talk to
+          real hardware.
         </p>
         <p>
           Hardware-connected apps taught me to care about the unglamorous parts: flaky networks, slow connections,
@@ -275,7 +267,7 @@
       </div>
       <aside class="facts">
         <dl>
-          <dt>Role</dt><dd>SDE 3, Android</dd>
+          <dt>Role</dt><dd>Android Engineer</dd>
           <dt>Company</dt><dd>Ericsson Enterprise Wireless Solutions</dd>
           <dt>Works from</dt><dd>India (Bengaluru team, remote)</dd>
           <dt>Languages</dt><dd>English, Telugu</dd>
@@ -292,53 +284,13 @@
     <div class="grid cols-3">
       <div class="card"><div class="ico">⚡</div><h3>Performance and stability</h3><p>Reducing ANRs and crashes, shortening load times and keeping apps responsive on real devices.</p></div>
       <div class="card"><div class="ico">🏗️</div><h3>Architecture</h3><p>MVVM, MVI and Clean Architecture with Hilt or Koin, plus migrating legacy code to modern Kotlin.</p></div>
-      <div class="card"><div class="ico">📡</div><h3>Hardware-connected apps</h3><p>Apps that work with routers, endpoints, Bluetooth LE and Wi-Fi, where the connection is part of the product.</p></div>
+      <div class="card"><div class="ico">📡</div><h3>Hardware-connected apps</h3><p>Apps that work with Bluetooth LE, Wi-Fi and other hardware, where the connection is part of the product.</p></div>
       <div class="card"><div class="ico">🧪</div><h3>Quality and testing</h3><p>Raising test coverage with JUnit, Mockito and JaCoCo, backed by CI on GitHub Actions.</p></div>
       <div class="card"><div class="ico">🎨</div><h3>Modern UI</h3><p>Jetpack Compose and clean state handling, working closely with UX teams on redesigns.</p></div>
       <div class="card"><div class="ico">🤝</div><h3>Mentoring</h3><p>Code reviews and architecture guidance that help junior engineers design for the future.</p></div>
     </div>
   </section>
 
-  <section id="work" class="reveal">
-    <div class="eyebrow">Selected work</div>
-    <h2>Case studies</h2>
-    <p class="sub">Three stories that show how I make decisions, not only what I built.</p>
-
-    <div class="grid">
-      <article class="card case">
-        <div class="tag">Ownership</div>
-        <h3>Installation history for a field-installation app</h3>
-        <dl>
-          <dt>Problem</dt><dd>The app never saved installation data. Admins couldn't see how or where an install happened, and details like the speed test were lost. About 3,000 installs a month, all for business customers.</dd>
-          <dt>My role</dt><dd>I owned the feature from scratch over about four months, with one junior Android developer, one junior iOS developer, a backend developer and QA.</dd>
-          <dt>Approach</dt><dd>The timeline was short and nobody wanted a rewrite. I proposed a tracking layer on top of the existing flow, so working installs weren't put at risk and a future rewrite could plug into the same layer. I designed the API request and response, and mentored the junior Android developer on architecture and tests.</dd>
-          <dt>Result</dt><dd>Admins now see per-install details on the web, including install duration, which they use to assign time slots and workers.</dd>
-          <dt>Trade-off</dt><dd>No offline support, a deliberate choice for the deadline. The planned next step is saving locally first with Room and syncing with WorkManager, using client-generated IDs so retries are safe.</dd>
-        </dl>
-      </article>
-
-      <article class="card case">
-        <div class="tag">Technical decision</div>
-        <h3>Native Android or React Native?</h3>
-        <dl>
-          <dt>Problem</dt><dd>Management wanted React Native because the web team had good results with React. The app needed Bluetooth LE, Wi-Fi and direct hardware access.</dd>
-          <dt>Approach</dt><dd>I disagreed, so I brought evidence: a side-by-side demo of BLE and Wi-Fi communication in React Native and in native Android, with measurements. Every BLE and Wi-Fi feature would also have needed a native module and a bridge.</dd>
-          <dt>Numbers</dt><dd>React Native connected about 100 ms slower and used about 30 to 40 MB more memory in my test.</dd>
-          <dt>Result</dt><dd>The decision was native. The trade-off was accepted openly: two separate teams and no code sharing with web, in return for better performance and easier long-term maintenance.</dd>
-        </dl>
-      </article>
-
-      <article class="card case">
-        <div class="tag">Mentoring</div>
-        <h3>Teaching API design that can grow</h3>
-        <dl>
-          <dt>Problem</dt><dd>A junior developer designed APIs that were hard to extend. For example, package contents were stored as key-value pairs with fixed keys.</dd>
-          <dt>Approach</dt><dd>In code review I explained what would break later and why. We moved the contents into a JSON object so each item could gain fields such as counts or images without breaking callers.</dd>
-          <dt>Result</dt><dd>He began spotting future use cases on his own. Later he designed a v2 API with a <code>meta</code> field that carries pagination and other information in the same response.</dd>
-        </dl>
-      </article>
-    </div>
-  </section>
 
   <section id="principles" class="reveal">
     <div class="eyebrow">How I work</div>
@@ -372,12 +324,12 @@
     <p class="sub"></p>
 
     <div class="job">
-      <h3>SDE 3, Ericsson Enterprise Wireless Solutions</h3>
+      <h3>Android Engineer, Ericsson Enterprise Wireless Solutions</h3>
       <div class="meta">Apr 2022 – Present · Bengaluru (Remote)</div>
       <ul>
-        <li>Build new features for the Cradlepoint NetCloud Manager and Verify apps with cross-functional teams.</li>
+        <li>Build new features with cross-functional teams.</li>
         <li>Reduce Application Not Responding (ANR) incidents and crashes to improve app stability.</li>
-        <li>Increase test coverage for both apps to raise code quality and cut production issues.</li>
+        <li>Increase test coverage on critical apps to raise code quality and cut production issues.</li>
         <li>Converted an entire Java library to Kotlin for better maintainability and performance.</li>
         <li>Worked with the UX/UI team on an app redesign, then checked it with user feedback surveys.</li>
         <li>Optimized code and load times; mentor junior engineers through knowledge transfer and guidance.</li>
@@ -390,7 +342,6 @@
       <ul>
         <li>Worked with backend developers, program managers and QA on new product ideas.</li>
         <li>Turned product requirements into clean, efficient code that met quality benchmarks.</li>
-        <li>Built the Rakuten Point Card app.</li>
       </ul>
     </div>
 
@@ -398,7 +349,7 @@
       <h3>Senior Software Engineer (Android), Chefling Software</h3>
       <div class="meta">Mar 2018 – Nov 2020 · Bengaluru</div>
       <ul>
-        <li>Evaluated project requirements and designed the Chefling Android app from the start using MVP with Clean Architecture.</li>
+        <li>Evaluated project requirements and designed the Android app architecture from the start using MVP with Clean Architecture.</li>
       </ul>
     </div>
 
@@ -411,37 +362,6 @@
     </div>
   </section>
 
-  <section id="apps" class="reveal">
-    <div class="eyebrow">Shipped</div>
-    <h2>Apps on Google Play</h2>
-    <div class="grid cols-2">
-      <div class="card">
-        <h3>Cradlepoint NetCloud Manager</h3>
-        <p>Manage NetCloud services, routers and endpoints remotely. Get alerts, monitor router status and LTE signal strength, run tests and reboot devices from anywhere.</p>
-        <a class="link" href="https://play.google.com/store/apps/details?id=com.cradlepoint.netcloud.manager" target="_blank" rel="noopener">View on Google Play →</a>
-      </div>
-      <div class="card">
-        <h3>Cradlepoint Verify</h3>
-        <p>An installation tool that guides installers in assembling and positioning Cradlepoint endpoints to build a reliable Wireless WAN network.</p>
-        <a class="link" href="https://play.google.com/store/apps/details?id=com.cradlepoint.verify" target="_blank" rel="noopener">View on Google Play →</a>
-      </div>
-      <div class="card">
-        <h3>Rakuten Point Card</h3>
-        <p>Pay shopping bills with Rakuten points by showing a barcode. Includes a store locator, point history, and current campaigns and coupons.</p>
-        <a class="link" href="https://play.google.com/store/apps/details?id=jp.co.rakuten.pointpartner.app" target="_blank" rel="noopener">View on Google Play →</a>
-      </div>
-      <div class="card">
-        <h3>Chefling</h3>
-        <p>A smart kitchen assistant that suggests recipes from the ingredients in your pantry, controls connected Bosch and Thermador appliances, and helps plan meals.</p>
-        <a class="link" href="https://play.google.com/store/apps/details?id=com.chefling.chefling" target="_blank" rel="noopener">View on Google Play →</a>
-      </div>
-      <div class="card">
-        <h3>HomePad Pro</h3>
-        <p>A property management app for digital inspections of rental properties: documents, inventory, renovation tracking and building analysis reports on iPads and tablets.</p>
-        <a class="link" href="https://play.google.com/store/apps/details?id=com.app.android.homepad.pro" target="_blank" rel="noopener">View on Google Play →</a>
-      </div>
-    </div>
-  </section>
 
   <section id="contact" class="reveal">
     <div class="contact-box">
