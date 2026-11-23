@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resume | Vinod Kumar Nalla</title>
+<meta name="description" content="Full resume of Vinod Kumar Nalla, Android engineer.">
+<meta name="theme-color" content="#0a0f1c">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%233ddc84'/><text x='50' y='68' font-size='54' text-anchor='middle' font-family='sans-serif' font-weight='800' fill='%23062b18'>VN</text></svg>">
+<script>document.documentElement.classList.add("js");</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="glow" aria-hidden="true"><i></i><i></i></div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="./">Vinod<span>.</span>dev</a>
+    <nav class="links" style="display:flex">
+      <a href="./">← Back to portfolio</a>
+    </nav>
+    <button class="icon-btn" id="themeBtn" aria-label="Toggle light and dark theme" title="Toggle theme">☾</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="rhead">
+    <h1>Vinod Kumar Nalla</h1>
+    <p class="role">Mobile Lead · Android engineer</p>
+    <div class="rlinks">
+      <a href="tel:+919110734491">+91 9110734491</a>
+      <a href="mailto:vinodkumar.nalla67@gmail.com">vinodkumar.nalla67@gmail.com</a>
+      <a href="https://github.com/vinodkumarnalla" target="_blank" rel="noopener">github.com/vinodkumarnalla</a>
+    </div>
+    <div class="toolbar">
+      <button class="btn" onclick="window.print()">Print / Save as PDF</button>
+    </div>
+  </div>
+
+  <section>
+    <div class="eyebrow">Experience</div>
+    <h2>Career</h2>
+    <div class="rjob">
+      <div class="top"><h3>Mobile Lead</h3><span class="when">Apr 2022 – Present</span></div>
+      <div class="where">Ericsson Enterprise Wireless Solutions · Bengaluru (Remote)</div>
+      <ul>
+        <li>Build new features with cross-functional teams.</li>
+        <li>Reduce Application Not Responding (ANR) incidents and crashes to improve app stability.</li>
+        <li>Increase test coverage on critical apps to raise code quality and cut production issues.</li>
+        <li>Converted an entire Java library to Kotlin for better maintainability and performance.</li>
+        <li>Worked with the UX/UI team on an app redesign, then checked it with user feedback surveys.</li>
+        <li>Optimized code and load times; mentor junior engineers through knowledge transfer and guidance.</li>
+      </ul>
+    </div>
+    <div class="rjob">
+      <div class="top"><h3>Senior Android Engineer</h3><span class="when">Nov 2020 – Apr 2022</span></div>
+      <div class="where">Rakuten India Enterprise · Bengaluru</div>
+      <ul>
+        <li>Worked with backend developers, program managers and QA on new product ideas.</li>
+        <li>Turned product requirements into clean, efficient code that met quality benchmarks.</li>
+      </ul>
+    </div>
+    <div class="rjob">
+      <div class="top"><h3>Senior Software Engineer (Android)</h3><span class="when">Mar 2018 – Nov 2020</span></div>
+      <div class="where">Chefling Software · Bengaluru</div>
+      <ul>
+        <li>Evaluated project requirements and designed the Android app architecture from the start using MVP with Clean Architecture.</li>
+      </ul>
+    </div>
+    <div class="rjob">
+      <div class="top"><h3>Software Engineer (Android)</h3><span class="when">Feb 2015 – Feb 2018</span></div>
+      <div class="where">Teleparadigm Networks · Hyderabad</div>
+      <ul>
+        <li>Worked with Android and backend teams and built a base in Android practices and coding standards.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">Education</div>
+    <h2>Education</h2>
+    <p><strong>B.Tech, Electronics and Communication Engineering</strong><br>Sri Sivani Institute of Technology, Srikakulam · 2014</p>
+  </section>
+
+  <section>
+    <div class="eyebrow">Toolbox</div>
+    <h2>Skills</h2>
+    <div class="skill-group"><h3>Languages</h3>
+      <div class="chips"><span class="chip">Kotlin</span><span class="chip">Java</span><span class="chip">Kotlin Multiplatform</span></div></div>
+    <div class="skill-group"><h3>Android</h3>
+      <div class="chips"><span class="chip">Android SDK</span><span class="chip">Jetpack Compose</span><span class="chip">Jetpack Components</span><span class="chip">Room</span><span class="chip">Coroutines</span><span class="chip">Flow</span><span class="chip">LiveData</span><span class="chip">Retrofit</span><span class="chip">Ktor</span><span class="chip">Firebase</span></div></div>
+    <div class="skill-group"><h3>Architecture and DI</h3>
+      <div class="chips"><span class="chip">MVVM</span><span class="chip">MVI</span><span class="chip">MVP</span><span class="chip">Clean Architecture</span><span class="chip">Dagger-Hilt</span><span class="chip">Koin</span></div></div>
+    <div class="skill-group"><h3>Quality and delivery</h3>
+      <div class="chips"><span class="chip">JUnit</span><span class="chip">Mockito</span><span class="chip">JaCoCo</span><span class="chip">Git</span><span class="chip">GitHub Actions</span><span class="chip">CI/CD</span><span class="chip">Performance optimization</span></div></div>
+    <div class="skill-group"><h3>Ways of working</h3>
+      <div class="chips"><span class="chip">Mentoring</span><span class="chip">Agile / Scrum</span><span class="chip">Technical documentation</span><span class="chip">Cross-functional collaboration</span><span class="chip">AI-assisted development</span></div></div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="y"></span> Vinod Kumar Nalla</div>
+</footer>
+<script>
+  (function () {
+    var root = document.documentElement, saved = null;
+    try { saved = localStorage.getItem('theme'); } catch (e) {}
+    var light = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+    var theme = saved || (light ? 'light' : 'dark');
+    var btn = document.getElementById('themeBtn');
+    function apply(t) { root.setAttribute('data-theme', t); btn.textContent = t === 'dark' ? '☀' : '☾'; }
+    apply(theme);
+    btn.addEventListener('click', function () {
+      theme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      apply(theme);
+      try { localStorage.setItem('theme', theme); } catch (e) {}
+    });
+  })();
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
